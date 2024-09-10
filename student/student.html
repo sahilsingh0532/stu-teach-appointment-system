@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Module</title>
     <link rel="stylesheet" href="student.css">
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="firebaseConfig.js"></script> <!-- Make sure firebaseConfig.js defines the configuration and initialization -->
 </head>
 <body>
     <h1>Student-Teacher Appointment System</h1>
@@ -48,10 +56,7 @@
         <button onclick="sendMessage()">Send</button>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-    <script src="firebaseConfig.js"></script>
+    <!-- Custom JavaScript File (Make sure it's loaded after Firebase SDKs) -->
     <script src="student.js"></script>
 </body>
 </html>
