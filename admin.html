@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Student-Teacher Booking System</title>
+    
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="#add-teacher">Add Teacher</a></li>
+                <li><a href="#manage-teachers">Manage Teachers</a></li>
+                <li><a href="#approve-students">Approve Students</a></li>
+                <li><a id="logout" href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <header class="admin-header">
+                <h1>Welcome, Admin!</h1>
+            </header>
+
+            <section>
+                <div id="add-teacher" class="dashboard-section">
+                    <h2>Add Teacher</h2>
+                    <form id="add-teacher-form">
+                        <input type="text" id="teacher-name" placeholder="Name" required>
+                        <input type="text" id="teacher-department" placeholder="Department" required>
+                        <input type="text" id="teacher-subject" placeholder="Subject" required>
+                        <input type="email" id="teacher-email" placeholder="Email" required>
+                        <input type="password" id="teacher-password" placeholder="Password" required>
+                        <input type="password" id="teacher-password" placeholder="Confirm Password" required>
+                        <button type="submit" class="btn">Add Teacher</button>
+                    </form>
+                </div>    
+            </section>
+
+            <section>
+                <div id="manage-teachers" class="dashboard-section">
+                    <h2>Manage Teachers</h2>
+                    <div class="teacher-list">
+                        <!-- Teacher list will be dynamically generated here -->
+                    </div>
+                </div>    
+            </section>
+            
+            <section>
+                <div id="approve-students" class="dashboard-section">
+                    <h2>Approve Students</h2>
+                    <div class="student-list">
+                    </div>        
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!-- <script src="../firebase-config.js"></script> -->
+    <script src="admin.js"></script>
+</body>
+</html>

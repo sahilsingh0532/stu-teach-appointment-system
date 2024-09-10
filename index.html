@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student-Teacher Booking System</h1>
+        <nav>
+            <!-- You can add links or buttons here for navigation if needed -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>About the System</h2>
+            <p>
+                This web-based appointment system allows students to book appointments with teachers, 
+                manage schedules, and communicate effectively. Choose your role below to get started.
+            </p>
+        </section>
+
+        <!-- Buttons for Teacher and Student selection -->
+        <section>
+            <div class="role-buttons">
+                <button onclick="myFunction('teacher.html')">Teacher</button>
+                <button onclick="myFunction('student/student.html')">Student</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student-Teacher Booking System</p>
+    </footer>
+
+    <script>
+        // Function to redirect to the selected role page
+        function myFunction(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+</html>

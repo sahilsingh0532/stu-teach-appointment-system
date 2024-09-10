@@ -1,0 +1,154 @@
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+/* Main Content Styling */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.teacher-header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.appointment-item, .message-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-item p, .message-item p {
+    margin: 5px 0;
+}
+
+.appointment-item button, .message-item button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.appointment-item button:hover, .message-item button:hover {
+    background-color: #0056b3;
+}
+
+.appointment-item .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.appointment-item .delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Hover effect for buttons inside appointment items */
+.appointment-item button.approve-btn {
+    background-color: #28a745;
+}
+
+.appointment-item button.approve-btn:hover {
+    background-color: #218838;
+}
+
+/* General layout adjustments for the list */
+.appointment-list, .message-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment-list div, .message-list div {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .dashboard-section {
+        margin-bottom: 15px;
+    }
+}

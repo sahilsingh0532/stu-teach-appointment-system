@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('1.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.288);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            height: 300px
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 95%;
+            font-size: 1rem;
+            background-color: #cccccc00;
+            padding: 10px;
+            margin: 10px 0;
+            color: #000;
+            border-radius: 5px;
+            border: 1px solid #300d8f00;
+            
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #1e21e2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #4ae0e6;
+        }
+
+        .toggle {
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            color: blue;
+        }
+
+        .toggle:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="loginContainer">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button id="loginButton">Login</button>
+        <div class="toggle" onclick="toggleForm()">Don't have an account? Sign up</div>
+    </div>
+
+    <div class="container" id="signupContainer" style="display: none;">
+        <h2>Sign up</h2>
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button id="signupButton">Sign up</button>
+        <div class="toggle" onclick="toggleForm()">Already have an account? Login</div>
+    </div>
+    <script type="module" src="app.js"></script>
+
+</body>
+<script>
+    function toggleForm() {
+        const loginContainer = document.getElementById('loginContainer');
+        const signupContainer = document.getElementById('signupContainer');
+        if (loginContainer.style.display === "none") {
+            loginContainer.style.display = "block";
+            signupContainer.style.display = "none";
+        } else {
+            loginContainer.style.display = "none";
+            signupContainer.style.display = "block";
+        }
+    }
+</script>
+
+</html>
