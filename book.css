@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container for the Appointment Form */
+#book-appointment {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    height: fit-content;
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#book-appointment:hover {
+    transform: translateY(-10px);
+}
+
+/* Form Input Fields */
+input[type="text"], input[type="date"], input[type="time"] {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    outline: none;
+    border: 2px solid #3498db;
+}
+
+/* Button Styles */
+#book-appointment-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+#book-appointment-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Link to View Appointments */
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 400px) {
+    #book-appointment {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"] {
+        font-size: 0.9rem;
+    }
+
+    #book-appointment-button {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

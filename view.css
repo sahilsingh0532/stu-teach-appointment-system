@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the View Appointments Section */
+#view-appointments {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#view-appointments:hover {
+    transform: translateY(-10px);
+}
+
+/* Heading */
+h2 {
+    color: #fff;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Appointments Table */
+#appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#appointments-table th, #appointments-table td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Table Header */
+#appointments-table th {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ecf0f1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Rows */
+#appointments-table tbody tr {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+#appointments-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Status Column Styling */
+#appointments-table td:nth-child(5) {
+    font-weight: bold;
+    color: #f1c40f; /* Status color */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #view-appointments {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #appointments-table th, #appointments-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    #appointments-table th, #appointments-table td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
