@@ -5,7 +5,10 @@ body, html {
     align-items: center;
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #d951fc;
+    background-image: url('back.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #container {
@@ -23,6 +26,7 @@ body, html {
     position: relative;
 }
 
+
 .form {
     position: absolute;
     width: 100%;
@@ -32,10 +36,10 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
 }
 
 #register {
@@ -46,7 +50,10 @@ body, html {
     margin-bottom: 10px;
     padding: 10px;
     width: 100%;
-    border: 1px solid #ccc;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ffffff;
+    
 }
 
 .form button {
